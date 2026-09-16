@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="CRUDPessoasMaven">
+  <ClassDiagramComponents>
+    <Class name="frmCadastro" package="Apresentacao" visibility="public" xPosition="100.0" yPosition="871.0">
+      <Fields>
+        <Field name="btnCadastrar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="lblCpf" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lblNome" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lblRg" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="txfCpf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txfNome" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txfRg" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="java.awt.Frame" name="parent"/>
+          <Argument type="boolean" name="modal"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="btnCadastrarActionPerformed" returnType="//GEN-FIRST:event_btnCadastrarActionPerformed void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="frmPEE" package="Apresentacao" visibility="public" xPosition="966.0" yPosition="871.0">
+      <Fields>
+        <Field name="btnEditar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnExcluir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnPesquisarId" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnPesquisarNome" type="javax.swing.JButton" visibility="private"/>
+        <Field name="lblCpf" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lblId" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lblNome" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lblRg" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="txfCpf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txfId" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txfNome" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txfRg" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="java.awt.Frame" name="parent"/>
+          <Argument type="boolean" name="modal"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="limparFormulario" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="btnPesquisarIdActionPerformed" returnType="//GEN-FIRST:event_btnPesquisarIdActionPerformed void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnEditarActionPerformed" returnType="//GEN-FIRST:event_btnEditarActionPerformed void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnExcluirActionPerformed" returnType="//GEN-FIRST:event_btnExcluirActionPerformed void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="frmPrincipal" package="Apresentacao" visibility="public" xPosition="100.0" yPosition="1317.0">
+      <Fields>
+        <Field name="jMenu1" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenuBar1" type="javax.swing.JMenuBar" visibility="private"/>
+        <Field name="mniCadastro" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="mniPEE" type="javax.swing.JMenuItem" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="java.awt.Frame" name="parent"/>
+          <Argument type="boolean" name="modal"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="mniCadastroActionPerformed" returnType="//GEN-FIRST:event_mniCadastroActionPerformed void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="mniPEEActionPerformed" returnType="//GEN-FIRST:event_mniPEEActionPerformed void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="CRUDPessoasMaven" package="com.mycompany.crudpessoasmaven" visibility="public" xPosition="100.0" yPosition="1690.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Conexao" package="DAL" visibility="public" xPosition="1200.0" yPosition="61.0">
+      <Fields>
+        <Field name="conexao" type="Connection" visibility="package"/>
+        <Field name="mensagem" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="conectar" returnType="Connection" visibility="public"/>
+        <Method name="desconectar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PessoaDAO" package="DAL" visibility="public" xPosition="641.0" yPosition="61.0">
+      <Fields>
+        <Field name="mensagem" type="String" visibility="public"/>
+        <Field name="conexao" type="Conexao" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="cadastrarPessoa" returnType="void" visibility="public">
+          <Argument type="Pessoa" name="pessoa"/>
+        </Method>
+        <Method name="pesquisarPessoaId" returnType="Pessoa" visibility="public">
+          <Argument type="Pessoa" name="pessoa"/>
+        </Method>
+        <Method name="editarPessoa" returnType="void" visibility="public">
+          <Argument type="Pessoa" name="pessoa"/>
+        </Method>
+        <Method name="excluirPessoa" returnType="void" visibility="public">
+          <Argument type="Pessoa" name="pessoa"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Controle" package="Modelo" visibility="public" xPosition="740.0" yPosition="573.0">
+      <Fields>
+        <Field name="mensagem" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="cadastrarPessoa" returnType="void" visibility="public">
+          <Argument type="List&lt;String&gt;" name="listaDadosPessoa"/>
+        </Method>
+        <Method name="pesquisarPessoaId" returnType="Pessoa" visibility="public">
+          <Argument type="List&lt;String&gt;" name="listaDadosPessoa"/>
+        </Method>
+        <Method name="editarPessoa" returnType="void" visibility="public">
+          <Argument type="List&lt;String&gt;" name="listaDadosPessoa"/>
+        </Method>
+        <Method name="excluirPessoa" returnType="void" visibility="public">
+          <Argument type="List&lt;String&gt;" name="listaDadosPessoa"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Pessoa" package="Modelo" visibility="public" xPosition="309.0" yPosition="408.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="nome" type="String" visibility="private"/>
+        <Field name="rg" type="String" visibility="private"/>
+        <Field name="cpf" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getNome" returnType="String" visibility="public"/>
+        <Method name="setNome" returnType="void" visibility="public">
+          <Argument type="String" name="nome"/>
+        </Method>
+        <Method name="getRg" returnType="String" visibility="public"/>
+        <Method name="setRg" returnType="void" visibility="public">
+          <Argument type="String" name="rg"/>
+        </Method>
+        <Method name="getCpf" returnType="String" visibility="public"/>
+        <Method name="setCpf" returnType="void" visibility="public">
+          <Argument type="String" name="cpf"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Validacao" package="Modelo" visibility="public" xPosition="1152.0" yPosition="357.0">
+      <Fields>
+        <Field name="mensagem" type="String" visibility="public"/>
+        <Field name="id" type="int" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="validarIdPessoa" returnType="void" visibility="public">
+          <Argument type="String" name="identificacao"/>
+        </Method>
+        <Method name="validarDadosPessoa" returnType="void" visibility="public">
+          <Argument type="List&lt;String&gt;" name="listaDadosPessoa"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation name="" source="com.mycompany.crudpessoasmaven.CRUDPessoasMaven" target="Apresentacao.frmPrincipal" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="Apresentacao.frmPrincipal" target="Apresentacao.frmPEE" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="Modelo.Controle" target="Modelo.Validacao" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Modelo.Controle" target="Modelo.Pessoa" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="Apresentacao.frmCadastro" target="Modelo.Controle" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="conexao" source="DAL.PessoaDAO" target="DAL.Conexao" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="Modelo.Controle" target="DAL.PessoaDAO" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="Apresentacao.frmPEE" target="Modelo.Controle" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="Apresentacao.frmPrincipal" target="Apresentacao.frmCadastro" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
